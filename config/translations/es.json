@@ -1,21 +1,62 @@
-{ 
-  "home": "ES Home",
+{
+  "monthText": "Dic",
+  "addToCalendar": "Agregar al calendario",
 
-  "hello": "ES ES Gatsby multi-language starter",
-  "subline": "Internationalization / i18n without third party plugins or packages for Posts and Pages. Different URLs dependending on the language. Focused on SEO, PWA, Image Optimization, Styled Components and more. This starter is also integrate with Netlify CMS to manage all pages, posts and images.",
-  "latestPosts": "Latest posts",
-  "category": "Category", 
-  "allPosts": "All Posts",
-  "toRead": "to read",
+  "involvedOne": "involúcrate",
+  "invovledTwo": "hoy mismo",
 
-  "next": "Next",
-  "prev": "Prev",
-  "of": "of",
+  "videoDrum": "bota",
+  "videoSing": "canta",
+  "videoDance": "baila",
+  "videoJustice": "por social justice!",
 
-  "button": "Button",
+  "involvedHeaderOne": "involúcrate",
+  "involvedHeaderTwo": "hoy mismo",
+  "involvedTitleChange": "Sé parte del cambio.",
+  "involvedTitleMake": "Haz una donación",
+  "involvedMakeParagraphTopline": "¡Ayúdanos a cambiar el mundo a través del poder de la música!",
+  "involvedMakeParagraphBody": "Tu donación apoya a las organizaciones que trabajan por la justicia social en las comunidades marginadas y desatendidas de todo el mundo. Todas las donaciones se destinarán a la Fundación Playing For Change, a los proyectos del UNFPA, United Nations Remember Slavery Programme, a Sankofa, Silkroad y a la Fundación del Rock & Roll Hall of Fame.",
+  "involvedButtonDonateOne": "Donar",
+  "involvedButtonDonateTwo": "ahora",
+  "involvedTitlePledge": "Asume the pledge",
+  "involvedPledgeParagraph": "Asume el compromiso de recibir actualizaciones sobre el evento global de Peace Throug Music y las acciones que puedes llevar a cabo en apoyo de la justicia social.",
+  "involvedEmailHere": "aquí va tu correo electrónico",
+  "involvedButtonPledgeOne": "Yo asumo",
+  "involvedButtonPledgeTwo": "el compromiso",
 
-  "aboutProject": "Iceberg Gatsby is a PWA, save it for offline reading.",
-  "seeMorePWA": "See more PWA here",
-  "maintainedBy": "Maintained by",
-  "contributeMessage": "You can always contribute with the project on"
+  "aboutHeaderOne": "Un latido",
+  "aboutHeaderTwo": "un corazón",
+  "aboutTitleOne": "Acerca",
+  "aboutTitleTwo": "de Peace Through Music",
+  "aboutTitleThree": "un evento global",
+  "aboutTitleFour": "por la justicia social",
+  "aboutParagraphOne": "Reimaginemos un mundo \"unido\" conectado por la música. Únete a Playing For Change y al Fondo de Población de las Naciones Unidas (UNFPA) en este evento global virtual para inspirar a la gente a actuar por la paz y la justicia, en todas partes y para todos.",
+  "aboutParagraphTwo": "Este evento especial contará con la participación de artistas, celebridades e influencers de todo el mundo, que se reunirán en el 75º aniversario de las Naciones Unidas en un solo acuerdo, por una sola causa: la justicia social.",
+  "aboutParagraphThree": "A través del lenguaje universal de la música y el arte de la narración de historias, Peace Through Music hará un llamado a la igualdad, la justicia racial y el fin de la discriminación, destacando a las personas de ascendencia africana y defendiendo la plena protección y promoción de todos sus derechos humanos. Encarnará la unidad y el propósito común que late en el corazón de la humanidad.",
+
+  "pledgePopUp": "Únete a nosotros y defiende la justicia social. Comprométete a ayudar a crear un mundo inclusivo donde todos disfruten de los mismos derechos humanos y nadie se quede atrás.",
+  "pledgeSocialText": "I am committed to creating an inclusive world where no one is left behind. Take the pledge and join me! #PeaceThroughMusic #4RealChange",
+
+  "supportHeaderOne": "muestra",
+  "supportHeaderTwo": "tu apoyo",
+  "supportParagraph": "Las ganancias de cada compra de mercancía de Peace Through Music apoyarán a las organizaciones de todo el mundo que se esfuerzan por erradicar la pobreza, la desigualdad y la discriminación sistemática racial y de género.",
+  "supportButtonShopOne": "comprar",
+  "supportButtonShopTwo": "ahora",
+
+  "featuringHeader": "presentando a",
+  "featuringInfoOne": "Músicos, poetas, voces expertas, bailarines, atletas, embajadores y jóvenes de todo el mundo,",
+  "featuringInfoTwo": "y muchos más...",
+
+  "collageR1": "Las",
+  "collageR2G1": "cosas",
+  "collageR2G2": "de la",
+  "collageR2G3": "vida",
+  "collageR3G1": "que",
+  "collageR3G2": "nos dividen",
+  "collageR4G1": "desaparecen",
+  "collageR4G2": "cuando",
+  "collageR5G1": "suena",
+  "collageR5G2": "la música",
+
+  "buttonDonate": "Donar ahora"
 }

@@ -1,21 +1,62 @@
-{ 
-  "home": "Home",
+{
+  "monthText": "Dec",
+  "addToCalendar": "Add to Calendar",
 
-  "hello": "Gatsby multi-language starter",
-  "subline": "Internationalization / i18n without third party plugins or packages for Posts and Pages. Different URLs dependending on the language. Focused on SEO, PWA, Image Optimization, Styled Components and more. This starter is also integrate with Netlify CMS to manage all pages, posts and images.",
-  "latestPosts": "Latest posts",
-  "category": "Category", 
-  "allPosts": "All Posts",
-  "toRead": "to read",
+  "involvedOne": "get involved",
+  "involvedTwo": "today",
 
-  "next": "Next",
-  "prev": "Prev",
-  "of": "of",
+  "videoDrum": "drum",
+  "videoSing": "sing",
+  "videoDance": "dance",
+  "videoJustice": "for social justice!",
 
-  "button": "Button",
+  "involvedHeaderOne": "get involved",
+  "involvedHeaderTwo": "today",
+  "involvedTitleChange": "Be part of the change.",
+  "involvedTitleMake": "Make a donation",
+  "involvedMakeParagraphTopline": "Help us change the world through the power of music!",
+  "involvedMakeParagraphBody": "Your donation supports organizations working for social justice in marginalized and underserved communities around the world. All donations will benefit the Playing For Change Foundation, the United Nations Population Fund, the United Nations Remember Slavery Programme, Sankofa, Silkroad, and The Rock & Roll Hall of Fame Foundation.",
+  "involvedButtonDonateOne": "Donate",
+  "involvedButtonDonateTwo": "now",
+  "involvedTitlePledge": "Take the pledge",
+  "involvedPledgeParagraph": "Take the pledge to receive updates about the Peace Through Music Global Event and actions you can take in support of social justice.",
+  "involvedEmailHere": "your email here",
+  "involvedButtonPledgeOne": "I Take",
+  "involvedButtonPledgeTwo": "the Pledge",
 
-  "aboutProject": "Iceberg Gatsby is a PWA, save it for offline reading.",
-  "seeMorePWA": "See more PWA here",
-  "maintainedBy": "Maintained by",
-  "contributeMessage": "You can always contribute with the project on"
+  "aboutHeaderOne": "one beat",
+  "aboutHeaderTwo": "one heart",
+  "aboutTitleOne": "about",
+  "aboutTitleTwo": "peace through music",
+  "aboutTitleThree": "a global event",
+  "aboutTitleFour": "for social justice",
+  "aboutParagraphOne": "Let's re-imagine a ‘united’ world connected by music. Join Playing For Change and the United Nations Population Fund (UNFPA) in this virtual global event to inspire people to act for peace and justice, everywhere for everyone.",
+  "aboutParagraphTwo": "This special event will feature artists, celebrities and influencers from all over the world, coming together on the 75th anniversary of the United Nations in one accord, for one cause — social justice.",
+  "aboutParagraphThree": "Through the universal language of music and the art of storytelling, Peace Through Music will call for equality, racial justice, and an end to discrimination, spotlighting people of African descent and championing the full protection and promotion of all of their human rights. It will embody the unity and common purpose that beat in the heart of humanity.",
+
+  "pledgePopUp": "Join us and stand up for social justice. Commit to helping create an inclusive world where equal human rights are enjoyed by all and no one is left behind.",
+  "pledgeSocialText": "I am committed to creating an inclusive world where no one is left behind. Take the pledge and join me! #PeaceThroughMusic #4RealChange",
+
+  "supportHeaderOne": "show your",
+  "supportHeaderTwo": "support",
+  "supportParagraph": "Proceeds from every purchase of Peace Through Music merchandise will support organizations around the world striving to eradicate poverty, inequality, and systemic racial and gender discrimination.",
+  "supportButtonShopOne": "shop",
+  "supportButtonShopTwo": "now",
+
+  "featuringHeader": "featuring",
+  "featuringInfoOne": "Worldwide musicians, poets, expert voices, dancers, athletes, ambassadors, youth,",
+  "featuringInfoTwo": "and more...",
+
+  "collageR1": "the",
+  "collageR2G1": "things",
+  "collageR2G2": "in",
+  "collageR2G3": "life",
+  "collageR3G1": "that",
+  "collageR3G2": "divide us",
+  "collageR4G1": "disappear",
+  "collageR4G2": "when",
+  "collageR5G1": "the",
+  "collageR5G2": "music plays",
+
+  "buttonDonate": "Donate now"
 }

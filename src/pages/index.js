@@ -7,13 +7,13 @@ const Index = () => {
   // useTranslations is aware of the global context (and therefore also "locale")
   // so it'll automatically give back the right translations
   const {
-    hello,
+    involvedPledgeParagraph,
   } = useTranslations();
 
   return (
     <div className="homepage">
       <SEO title="Home" />
-      <h2>{hello}</h2>
+      <h2>{involvedPledgeParagraph}</h2>
     </div>
   );
 };
