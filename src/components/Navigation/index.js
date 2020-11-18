@@ -1,8 +1,10 @@
 import React from 'react';
 import useMenu from '../useMenu';
 import useTranslations from '../useTranslations';
+import LocalizedLink from '../LocalizedLink';
+import { Link } from 'gatsby';
 
-import * as S from './styled';
+
 
 const Navigation = ({ isActive, handleToggleMenu }) => {
   const menuItems = useMenu();
@@ -10,22 +12,21 @@ const Navigation = ({ isActive, handleToggleMenu }) => {
 
   return (
     <>
-      <S.Navigation>
-        {menuItems.map((menu, index) => (
-          <S.NavigationLink
-            to={menu.link}
-            aria-label={menu.name}
-            activeClassName="active"
-            key={`${menu.link}${index}`}
-            >
-            {menu.name}
-          </S.NavigationLink>
-        ))}
+      <nav>
+        
+          {menuItems.map((menu, index) => (
+            <LocalizedLink
+              to={menu.link}
+              aria-label={menu.name}
+              activeClassName="active"
+              key={`${menu.link}${index}`}
+              >
+              {menu.name}
+            </LocalizedLink>
+          ))}
+        
+      </nav>
 
-        <S.NavigationButton to="" aria-label="Login">
-          {button}
-        </S.NavigationButton>
-      </S.Navigation>
     </>
   );
 };

@@ -2,8 +2,8 @@ import React from 'react';
 import { navigate } from "gatsby";
 import { useLocale } from '../../hooks/locale';
 import useLanguageMapping from '../useLanguageMapping';
+import { Link } from 'gatsby';
 
-import * as S from './styled';
 
 const Languages = () => {
   // Grab the locale (passed through context) from the Locale Provider 
@@ -40,26 +40,28 @@ const Languages = () => {
   }
 
   return (
-    <S.LanguageWrapper>
-      <S.LanguageItem>
-        <S.LanguageLink 
+    <>
+      <ul>
+        <li>
+        <Link 
           to="/" 
           onClick={(e) => handleClickLanguage(e, "en")}
           className={locale === 'en' ? 'is-active' : ''}
         >
           EN
-        </S.LanguageLink>
-      </S.LanguageItem>
-      <S.LanguageItem>
-        <S.LanguageLink 
+        </Link>
+        </li>
+        <li>
+        <Link 
           to="/" 
           onClick={(e) => handleClickLanguage(e, "pt")}
           className={locale === 'pt' ? 'is-active' : ''}
         >
           PT
-        </S.LanguageLink>
-      </S.LanguageItem>
-    </S.LanguageWrapper>
+        </Link>
+        </li>
+      </ul>
+    </>
   );
 };
 
