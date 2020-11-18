@@ -1,8 +1,8 @@
 {
   "menuItems": [
-    { "name": "Home", "link": "/" },
-    { "name": "About", "link": "/#about" },
-    { "name": "Blog", "link": "/#blog" },
-    { "name": "Contact", "link": "/#contact" }
+    { "name": "about the event", "link": "/#about" },
+    { "name": "the lineup", "link": "/#featuring" },
+    { "name": "get involved", "link": "/#get-involved" },
+    { "name": "merchandise", "link": "/#merchandise" }
   ]
 }

@@ -1,8 +1,8 @@
 {
   "menuItems": [
-    { "name": "ES Home", "link": "/" },
-    { "name": "ES About", "link": "/#about" },
-    { "name": "ES Blog", "link": "/#blog" },
-    { "name": "ES Contact", "link": "/#contact" }
+    { "name": "a evento", "link": "#about" },
+    { "name": "linea", "link": "#featuring" },
+    { "name": "involve", "link": "#get-involved" },
+    { "name": "merc", "link": "#merchandise" }
   ]
 }

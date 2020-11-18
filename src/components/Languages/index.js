@@ -20,23 +20,23 @@ const Languages = () => {
 
     if (!url) return lang === "en" ?
       navigate(`/`) :
-      navigate(`/${lang}`);
+      navigate(`/${lang}/`);
 
-    const associatedUrls = languageMapping.find(item => {
-      let hasUrl = false;
+    // const associatedUrls = languageMapping.find(item => {
+    //   let hasUrl = false;
 
-      Object.entries(item).forEach(([key, value]) => {
-        if (value.split("/").pop() === url) return hasUrl = true;
-      });
+    //   Object.entries(item).forEach(([key, value]) => {
+    //     if (value.split("/").pop() === url) return hasUrl = true;
+    //   });
 
-      return hasUrl
-    });
+    //   return hasUrl
+    // });
 
-    if (!associatedUrls) return navigate("/");
+    // if (!associatedUrls) return navigate("/");
 
-    return lang === "en" ?
-      navigate(`/${associatedUrls[lang]}`) :
-      navigate(`/${lang}/${associatedUrls[lang]}`);
+    // return lang === "en" ?
+    //   navigate(`/${associatedUrls[lang]}`) :
+    //   navigate(`/${lang}/${associatedUrls[lang]}`);
   }
 
   return (

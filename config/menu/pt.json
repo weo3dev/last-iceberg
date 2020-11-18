@@ -1,8 +1,8 @@
 {
   "menuItems": [
-    { "name": "Início", "link": "/" },
-    { "name": "Sobre", "link": "/#sobre" },
-    { "name": "Blog", "link": "/#blog" },
-    { "name": "Contato", "link": "/#contato" }
+    { "name": "sobre", "link": "#about" },
+    { "name": "o alinhamento", "link": "#featuring" },
+    { "name": "envolver-se", "link": "#get-involved" },
+    { "name": "mercadoria", "link": "#merchandise" }
   ]
 }
