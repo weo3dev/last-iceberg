@@ -2,8 +2,8 @@
   "name": "using-i18n",
   "private": true,
   "description": "Gatsby example site using MDX and dependency-free i18n",
-  "author": "LekoArts <hello@lekoarts.de>",
-  "version": "0.1.0",
+  "author": "William E ONeal III <dev@weo3.com>",
+  "version": "2.2.0",
   "license": "MIT",
   "scripts": {
     "build": "gatsby build",
