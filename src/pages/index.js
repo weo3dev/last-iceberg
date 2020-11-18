@@ -11,10 +11,12 @@ const Index = () => {
   } = useTranslations();
 
   return (
-    <div className="homepage">
-      <SEO title="Home" />
-      <h2>{involvedPledgeParagraph}</h2>
-    </div>
+    <>
+      <main>
+        <SEO title="Home" />
+        <h2>{involvedPledgeParagraph}</h2>
+      </main>
+    </>
   );
 };
 
