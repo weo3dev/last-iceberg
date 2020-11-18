@@ -28,6 +28,7 @@ const query = graphql`
           translations: childLanguageMappingJson {
             languageMapping {
               en
+              es
               pt
             }
           }

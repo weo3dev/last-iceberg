@@ -1,9 +1,7 @@
 import React from 'react';
 import SEO from '../components/seo';
 
-
 import useTranslations from '../components/useTranslations';
-
 
 const Index = () => {
   // useTranslations is aware of the global context (and therefore also "locale")

@@ -54,6 +54,15 @@ const Languages = () => {
         <li>
         <Link 
           to="/" 
+          onClick={(e) => handleClickLanguage(e, "es")}
+          className={locale === 'es' ? 'is-active' : ''}
+        >
+          ES
+        </Link>
+        </li>
+        <li>
+        <Link 
+          to="/" 
           onClick={(e) => handleClickLanguage(e, "pt")}
           className={locale === 'pt' ? 'is-active' : ''}
         >

@@ -44,17 +44,6 @@ const query = graphql`
             category
             allPosts
             toRead
-
-            next
-            prev
-            of
-
-            button
-
-            aboutProject
-            seeMorePWA
-            maintainedBy
-            contributeMessage
           }
         }
       }

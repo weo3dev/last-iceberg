@@ -5,12 +5,12 @@ import SEO from '../components/seo';
 
 import * as S from '../components/Content/styled';
 
-const Post = props => {
-  const post = props.data.markdownRemark;
+const Post = () => {
+ //  const post = props.data.markdownRemark;
 
   return (
     <>
-      <SEO
+      {/* <SEO
         title={post.frontmatter.title}
         description={post.frontmatter.description}
         image={post.frontmatter.image}
@@ -18,25 +18,25 @@ const Post = props => {
       <TitlePage text={post.frontmatter.title} />
       <S.Content>
         <div dangerouslySetInnerHTML={{ __html: post.html }}></div>
-      </S.Content>
+      </S.Content> */}
     </>
   );
 };
 
-export const query = graphql`
-  query Post($locale: String!, $title: String!) {
-    markdownRemark(
-      frontmatter: { title: { eq: $title } }
-      fields: { locale: { eq: $locale } }
-    ) {
-      frontmatter {
-        title
-        description
-        image
-      }
-      html
-    }
-  }
-`;
+// export const query = graphql`
+//   query Post($locale: String!, $title: String!) {
+//     markdownRemark(
+//       frontmatter: { title: { eq: $title } }
+//       fields: { locale: { eq: $locale } }
+//     ) {
+//       frontmatter {
+//         title
+//         description
+//         image
+//       }
+//       html
+//     }
+//   }
+// `;
 
 export default Post;

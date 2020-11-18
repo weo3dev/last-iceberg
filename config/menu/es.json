@@ -1,0 +1,8 @@
+{
+  "menuItems": [
+    { "name": "ES Home", "link": "/" },
+    { "name": "ES About", "link": "/#about" },
+    { "name": "ES Blog", "link": "/#blog" },
+    { "name": "ES Contact", "link": "/#contact" }
+  ]
+}

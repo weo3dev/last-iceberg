@@ -11,6 +11,15 @@ module.exports = {
     defaultTitle: `Gatsby Starter with multi-language and CMS`,
     defaultDescription: `Gatsby example site using Markdown, i18n and CMS`,
   },
+  es: {
+    path: `es`,
+    locale: `es-ES`,
+    dateFormat: `DD/MM/YYYY`,
+    siteLanguage: `es`,
+    ogLanguage: `es_ES`,
+    defaultTitle: `Gatsby Starter with multi-language and CMS`,
+    defaultDescription: `Gatsby example site using Markdown, i18n and CMS`,
+  },
   pt: {
     path: `pt`,
     locale: `pt-BR`,
