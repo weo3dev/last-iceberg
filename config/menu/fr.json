@@ -1,8 +1,8 @@
 {
   "menuItems": [
-    { "name": "ala evento", "link": "#about" },
-    { "name": "lineaeaea", "link": "#featuring" },
-    { "name": "c'est involve", "link": "#get-involved" },
-    { "name": "merci beaucoup", "link": "#merchandise" }
+    { "name": "ala evento", "link": "/#about" },
+    { "name": "lineaeaea", "link": "/#featuring" },
+    { "name": "c'est involve", "link": "/#get-involved" },
+    { "name": "merci beaucoup", "link": "/#merchandise" }
   ]
 }

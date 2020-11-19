@@ -1,0 +1,56 @@
+.faq {
+  display: flex;
+  flex-direction: column;
+  padding: 3rem 3rem;
+  color: var(--standard-white);
+  background: var(--brand-purple);
+  background: linear-gradient(90deg, #4D1F88 10%, #9A76F7 100%);
+
+  @media screen and (min-width: 40rem) {
+    padding: 3rem 5rem;
+    background: linear-gradient(90deg, #4D1F88 10%, #9A76F7 60%);
+  }
+
+
+  h2 {
+    color: var(--standard-white);
+    font-size: 2rem;
+    width: 50%;
+    text-transform: uppercase;
+    line-height: 0.5;
+    margin: 0;
+
+    @media screen and (min-width: 40rem) {
+      font-size: 5rem;
+      line-height: 0.875;
+    }
+  }
+
+  details {
+    color: var(--standard-white);
+    font-size: 0.9rem;
+    line-height: 1.2;
+    margin: 0.75rem 0;
+    padding-left: 2rem;
+
+    @media screen and (min-width: 40rem) {
+      font-size: 1.5rem;
+      line-height: 1.75;
+    }
+
+    summary {
+      color: var(--brand-yellow);
+      font-weight: bold;
+      margin-left: -2rem;
+
+      &:focus {
+        outline: none;
+      }
+
+    }
+
+    p {
+      color: inherit;
+    }
+  }
+}

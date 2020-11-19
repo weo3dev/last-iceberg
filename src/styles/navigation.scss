@@ -1,0 +1,19 @@
+.navigation-main {
+  display: none;
+
+  @media screen and (min-width: 960px) {
+    display: inline-grid;
+    grid-gap: 1rem;
+    margin-right: 1rem;
+    grid-auto-flow: column;
+    justify-content: right;
+    align-items: center;
+
+    a {
+      color: #fff;
+      font-size: 1rem;
+      text-transform: uppercase;
+      font-weight: 500;
+    }
+  }
+}

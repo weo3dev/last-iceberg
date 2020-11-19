@@ -1,0 +1,408 @@
+.masthead {
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-rows: repeat(3, min-content);
+  gap: 2rem;
+  padding: 1rem 2rem;
+  overflow: hidden;
+  position: relative;
+
+  & > section {
+    z-index: 10;
+
+    @media screen and (min-width: 40rem) {
+      min-height: 100vw;
+    }
+
+    @media screen and (min-width: 60rem) {
+      min-height: 50vw;
+    }
+
+    @media screen and (min-width: 1600px) {
+      min-height: 20vw;
+    }
+  }
+
+  & > section:nth-child(1) {
+    text-align: right;
+    justify-content: flex-start;
+    max-width: calc(100% - 6rem);
+  }
+  
+
+  @media screen and (min-width: 60rem) {
+    padding: unset;
+    grid-auto-flow: row;
+    grid-template-columns: repeat(2, minmax(451px, 1fr));
+    margin-top: 5rem;
+
+    & > section {
+      display: unset;
+      flex-direction: unset;
+      justify-content: unset;
+      align-items: unset;
+    }
+  }
+
+  p {
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+  }
+
+  .masthead-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 100%;
+    background: url('../images/dots.png');
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    transform: translateY(10%) translateX(10%);
+    mix-blend-mode: overlay;
+    opacity: 0.3;
+    z-index: 0;
+
+    @media screen and (min-width: 40rem) {
+      transform: translateY(0%) translateX(41%) rotate(10deg);
+    }
+  }
+
+  .masthead-datetime {
+    display: grid;
+    grid-template-columns: min-content 1fr;
+    grid-template-rows: repeat(2, min-content);
+    gap: 1rem;
+  }
+
+  .event-date {
+    font-family: var(--brand-header, sans-serif);
+    font-size: 20vw;
+    text-transform: uppercase;
+    color: var(--standard-white);
+    line-height: 0.75;
+    white-space: nowrap;
+    align-self: flex-end;
+
+    @media screen and (min-width: 60rem) {
+      font-size: 8vw;
+    }
+
+    @media screen and (min-width: 1600px) {
+      font-size: 7rem;
+    }
+  }
+
+  .event-times {
+    text-transform: uppercase;
+    font-size: 1.25rem;
+    justify-self: flex-start;
+
+    @media screen and (min-width: 40rem) {
+      font-size: 1.75rem;
+    }
+
+    p {
+      display: grid;
+      grid-template-columns: 1fr min-content min-content;
+      gap: 0.5rem;
+      font-family: 'Poppins', sans-serif;
+      color: var(--standard-white);
+      font-weight: 700;
+
+      span:nth-child(1) {
+        text-align: right;
+      }
+
+      span:nth-child(3) {
+        color: var(--brand-brick);
+      }
+    }
+
+    a {
+      // font-size: 1.5rem;
+      color: var(--standard-white);
+      text-decoration: underline;
+    }
+  }
+
+  .event-year {
+    font-family: fatfrank, sans-serif;
+    color: var(--brand-brick);
+    font-size: 20vw;
+    line-height: 0.75;
+
+    @media screen and (min-width: 60rem) {
+      font-size: 8vw;
+    }
+
+    @media screen and (min-width: 1600px) {
+      font-size: 7rem;
+    }
+  }
+
+  .add-to-calendar {
+    align-self: flex-end;
+    color: var(--brand-brick);
+    grid-column: 2;
+    grid-row: 2;
+
+    .icon-calendar {
+      display: block;
+      max-width: 2rem;
+      margin-bottom: 0.5rem;
+    }
+  }
+
+  .artists {
+    display: grid;
+    grid-auto-flow: row;
+    gap: 0.5rem;
+    margin-top: 1.5rem;
+
+    section {
+      display: flex;
+
+      p {
+        color: var(--standard-white);
+        white-space: nowrap;
+        font-size: 3.2vw;
+        font-family: fatfrank, sans-serif;
+        text-transform: uppercase;
+
+        &:nth-child(even) {
+          color: var(--brand-yellow);
+          padding-left: 0.5vw;
+          padding-right: 0.5vw;
+        }
+
+        @media screen and (min-width: 60rem) {
+          font-size: 1.7vw;
+        }
+
+        @media screen and (min-width: 1600px) {
+          font-size: 1.75rem;
+          &:nth-child(even) {
+            padding-left: 0.5rem;
+            padding-right: 0.5rem;
+          }
+        }
+  
+
+
+        &:nth-child(3) {
+          color: var(--brand-brick);
+        }
+      }
+
+      &:nth-child(even) {
+
+        p {
+
+          &:nth-child(1),
+          &:nth-child(5) {
+            color: var(--brand-brick);
+          }
+
+          &:nth-child(3) {
+            color: var(--standard-white);
+          }
+        }
+      }
+    }
+
+    .tagline {
+      text-transform: uppercase;
+      color: var(--brand-brick);
+      font-size: 3vw;
+      font-family: fatfrank, sans-serif;
+      line-height: 1.2;
+
+      @media screen and (min-width: 40rem) {
+        font-size: 1.75vw;
+      }
+      
+      @media screen and (min-width: 1600px) {
+        font-size: 1.5rem;
+      }
+    }
+  }
+}
+
+.button-jelly {
+  margin-top: 3rem;
+}
+
+.streaming {
+
+  min-height: 0;
+  display: grid;
+  grid-template-columns: 2rem 1fr 2rem;
+  max-width: 500px;
+  min-height: 10px !important;
+
+  @media screen and (min-width: 60rem) {
+    min-height: 0 !important;
+    grid-column: 1 / -1;
+    display: grid !important;
+    grid-template-columns: 5vw 1fr 2rem;
+    max-width: 900px;
+  }
+
+  @media screen and (min-width: 1600px) {
+    grid-template-columns: 10vw 1fr 2rem;
+    max-width: 900px;
+  }
+  
+  .facebook-exclusive {
+    grid-column: 2;
+    display: inline-grid;
+    grid-template-columns: repeat(2, min-content);
+    gap: 1rem;
+    align-items: center;
+    max-width: 80%;
+
+    p {
+      font-size: 1.5rem;
+      white-space: nowrap;
+      color: var(--standard-white);
+      font-family: var(--brand-header, sans-serif);
+    }
+
+    img {
+      max-width: 50px;
+    }
+  }
+
+  .giving-tuesday {
+    grid-column: 2;
+    display: block;
+    margin: 2rem 0;
+    max-width: 50%;
+
+    img {
+      max-width: 100%;
+    }
+  }
+}
+
+.headphones-girl {
+  mix-blend-mode: multiply;
+  height: 35vw;
+  overflow: hidden;
+  @media screen and (min-width: 1600px) {
+    height: 540px;
+  }
+}
+
+.pfc-logo-group {
+  display: grid;
+  grid-template-columns: 10% 80% 10%;
+  grid-template-rows: repeat(3, 30vw);
+
+  @media screen and (min-width: 40rem) {
+    grid-template-rows: repeat(3, 13vw);
+    margin-left: 5%;
+  }
+
+  @media screen and (min-width: 1600px) {
+    grid-template-rows: repeat(3, 200px);
+  }
+  
+  .pfc-logo {
+    grid-column: 2 / -1;
+    grid-row: 1 / -1;
+    filter: hue-rotate(0);
+  }
+
+  .pfc-burst {
+    grid-column: 1 / -1;
+    grid-row: 1 / 2;
+    margin-top: -4rem;
+  }
+
+  .pfc-texture {
+    grid-column: 1 / 4;
+    grid-row: 1 / -1;
+    filter: hue-rotate(356deg);
+  }
+}
+
+@keyframes rotating {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(85deg);
+  }
+}
+.rotating {
+  animation: rotating 30s linear infinite;
+}
+
+.react-add-to-calendar {
+    -webkit-font-smoothing: antialiased;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, .004);
+    position: relative;
+    display: inline-block;
+    margin: 0 auto;
+    white-space: nowrap;
+    min-width: 220px;
+
+    &__wrapper {
+        zoom: 1;
+        cursor: pointer;
+    }
+
+    &__button {
+        background-color: transparent;
+        color: var(--brand-brick);
+        font-size: 1rem;
+        font-family: Poppins, sans-serif;
+        font-weight: 400;
+
+        &--light {
+            background-color: transparent;
+        }
+    }
+
+    &__icon {
+        &--right {
+            padding-left: 5px;
+        }
+
+        &--left {
+            padding-right: 5px;
+        }
+    }
+
+    &__dropdown {
+      position: absolute;
+      top: 30px;
+      left: 1px;
+      width: 100%;
+      padding: 5px 0 5px 8px;
+      box-shadow: 1px 3px 6px rgba(0,0,0,.15);
+      background-color: hsla(0,0%,100%,.9);
+      text-align: left;
+
+        ul {
+            list-style: none;
+            margin: 0;
+
+            li {
+
+                a {
+                    color: #000;
+                    text-decoration: none;
+
+                    i {
+                        padding-right: 10px;
+                    }
+                }
+            }
+        }
+    }
+}

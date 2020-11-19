@@ -12,7 +12,7 @@ const Navigation = ({ isActive, handleToggleMenu }) => {
 
   return (
     <>
-      <nav>
+      <nav className="navigation-main">
         
           {menuItems.map((menu, index) => (
             <LocalizedLink

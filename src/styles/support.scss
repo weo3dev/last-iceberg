@@ -1,0 +1,89 @@
+.support {
+  display: grid;
+  grid-template-columns: 2rem repeat(2, 1fr) 2rem;
+  grid-template-rows: repeat(2, min-content);
+  padding: 4rem 0;
+  color: var(--standard-white);
+  background: var(--brand-purple);
+  background: linear-gradient(90deg, #4D1F88 10%, #9A76F7 100%);
+
+  @media screen and (min-width: 40rem) {
+    background: linear-gradient(90deg, #4D1F88 10%, #9A76F7 60%);
+  }
+  
+
+  @media screen and (min-width: 60rem) {
+    display: grid;
+    grid-template-columns: 5vw repeat(2, 1fr) 5vw;
+    grid-template-rows: repeat(2, min-content);
+    padding: 4rem 0;
+  }
+
+  .faux-hr {
+    grid-column: 1 / 4;
+    grid-row: 1;
+  }
+
+  h3 {
+    margin: 0;
+    font-size: 4.25rem;
+    text-transform: uppercase;
+    line-height: 1;
+    grid-column: 2 / 4;
+    grid-row: 1;
+    padding-top: 3rem;
+    z-index: 10;
+
+    @media screen and (min-width: 40rem) {
+      font-size: 10vw;
+    }
+
+    @media screen and (min-width: 1600px) {
+      font-size: 10rem;
+    }
+
+    span {
+      color: var(--brand-yellow);
+      display: block;
+    }
+  }
+
+  p {
+    font-size: 1.85rem;
+    line-height: 1.2;
+    color: inherit;
+    grid-column: 2 / 4;
+    z-index: 10;
+
+    @media screen and (min-width: 40rem) {
+      font-size: 2.7vw;
+      line-height: 1.3;
+      grid-column: 2 / 3;
+    }
+    @media screen and (min-width: 1600px) {
+      font-size: 2.5rem;
+    }
+  }
+
+  button {
+    grid-column: 2 / 3;
+    z-index: 10;
+  }
+
+  .merchandise-image {
+    display: none;
+    max-height: 95vw;
+    align-self: center;
+    filter: drop-shadow(1px 1px 1px rgba(51,51,51,0.6));
+    justify-self: flex-end;
+
+    @media screen and (min-width: 40rem) {
+      display: block;
+      grid-column: 3/4;
+      grid-row: 1/ 4;
+      max-height: 50vw;
+      transform: scale(1.2);
+    }
+
+  }
+}

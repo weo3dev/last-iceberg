@@ -1,0 +1,34 @@
+@use 'functions';
+
+@mixin fluid-type($min-vw, $max-vw, $min-value, $max-value) {
+    @each $property in $properties {
+      #{$property}: $min-value;
+    }
+  
+    // @media (min-width: $min-vw) {
+    //   @each $property in $properties {
+    //     #{$property}: calc(#{$min-value} + #{functions.strip-unit($max-value - $min-value)} * (100vw - #{$min-vw}) / #{functions.strip-unit($max-vw - $min-vw)});
+    //   }
+    // }
+  
+    @media (min-width: $max-vw) {
+      @each $property in $properties {
+        #{$property}: $max-value;
+      }
+    }
+}
+
+
+@mixin fluid-typography($min-size, $max-size, $min-viewport, $max-viewport) {
+
+    // font-size: calc( #{$min-size} + #{functions.strip-unit($max-size - $min-size)} * ((100vw - #{$min-viewport}) / (#{functions.strip-unit($max-viewport - $min-viewport)})));
+
+}
+
+
+
+
+
+// body {
+//     font-size: calc([minimum size] + ([maximum size] - [minimum size]) * ((100vw - [minimum viewport width]) / ([maximum viewport width] - [minimum viewport width])));
+//   }

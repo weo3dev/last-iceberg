@@ -1,7 +1,12 @@
 import React from 'react';
+import SEO from '../components/seo';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import { useLocale } from '../hooks/locale';
+
+// import 'src/styles/main.scss';
+
+import '../styles/main.scss';
 
 const BaseLayout = ({ children, pageContext: { locale } }) => {
   // Using the useLocale() hook to define the correct locale 
@@ -11,6 +16,7 @@ const BaseLayout = ({ children, pageContext: { locale } }) => {
 
   return (
     <>
+      <SEO title="Home" />
       <Header />
       {children}
       <Footer />

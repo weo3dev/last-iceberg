@@ -1,8 +1,8 @@
 {
   "menuItems": [
-    { "name": "a evento", "link": "#about" },
-    { "name": "linea", "link": "#featuring" },
-    { "name": "involve", "link": "#get-involved" },
-    { "name": "merc", "link": "#merchandise" }
+    { "name": "a evento", "link": "/#about" },
+    { "name": "linea", "link": "/#featuring" },
+    { "name": "involve", "link": "/#get-involved" },
+    { "name": "merc", "link": "/#merchandise" }
   ]
 }

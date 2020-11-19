@@ -1,0 +1,73 @@
+.button-jelly {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 300px;
+  min-height: 180px;
+  max-width: 440px;
+  max-height: 240px;
+  font-size: calc( 34px + (40 - 34) * (100vw - 375px) / (1600 - 375) );
+  padding-top: calc( 30px + (40 - 30) * (100vw - 375px) / (1600 - 375) );
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  font-family: fatfrank, sans-serif;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  @media screen and (min-width: 1600px) {
+    font-size: 2.5rem;
+    padding-top: 40px;
+  }
+
+  &.donate {
+      background: url('../images/buttons/Button-Donate.png');
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      color: var(--standard-white);
+  }
+
+  &.pledge {
+      line-height: 1;
+      text-align: right;
+      font-size: calc( 30px + (36 - 30) * (100vw - 375px) / (1600 - 375) );
+      padding-top: calc( 36px + (42 - 36) * (100vw - 375px) / (1600 - 375) );
+      background: url('../images/buttons/Button-Pledge-and-Shop.png');
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      color: var(--brand-purple);
+
+      @media screen and (min-width: 1600px) {
+        font-size: 2.25rem;
+      }
+  }
+
+  &.involved {
+    line-height: 1;
+    text-align: left;
+    text-transform: uppercase;
+    font-size: calc( 30px + (36 - 30) * (100vw - 375px) / (1600 - 375) );
+    padding-top: calc( 36px + (42 - 36) * (100vw - 375px) / (1600 - 375) );
+    background: url('../images/buttons/button-get-involved.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    color: var(--brand-yellow);
+
+    @media screen and (min-width: 1600px) {
+      font-size: 2.25rem;
+    }
+  }
+
+  &.shop {
+      background: url('../images/buttons/Button-Pledge-and-Shop.png');
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      color: var(--brand-purple);
+  }
+}

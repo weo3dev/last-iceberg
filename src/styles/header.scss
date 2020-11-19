@@ -1,0 +1,11 @@
+.header-main {
+  display: grid;
+  grid-template-columns: min-content 1fr min-content;
+  grid-template-rows: min-content;
+  background: rgb(227,83,101);
+  background: linear-gradient(90deg, #e35365 10%, rgba(227, 83, 101, 0) 80%);
+
+  @media screen and (min-width: 1600px) {
+    background: linear-gradient(90deg, #e35365 10%, rgba(227, 83, 101, 0) 80%); 
+  }
+}

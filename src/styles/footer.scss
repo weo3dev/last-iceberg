@@ -1,0 +1,126 @@
+footer {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--standard-white);
+
+
+  @media screen and (min-width: 40rem) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 1rem 0;
+    align-items: flex-end;
+  }
+
+
+  .background-drums {
+    width: 100%;
+    height: 160px;
+    background: url("../images/footer-top-edge.png") no-repeat center, linear-gradient(90deg, #DF3E65 0%, #CE3764 80%);
+    background-size: cover;
+
+    @media screen and (min-width: 40rem) {
+      grid-column: 1 / -1;
+      grid-row: 1 / 3;
+      transform: translateY(-145%);
+    }
+
+    @media screen and (min-width: 60rem) {
+      transform: translateY(-110%);
+    }
+
+    @media screen and (min-width: 1600px) {
+      transform: translateY(-10rem);
+    }
+  }
+
+  .copyright-privacy {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    grid-row: 2;
+    grid-column: 1;
+    order: 3;
+
+    p {
+      font-size: 0.85rem;
+      color:var(--brand-lightgrey);
+      line-height: 1;
+      margin: 0.5rem;
+    }
+
+    a {
+      color:var(--brand-lightgrey);
+    }
+
+    @media screen and (min-width: 60rem) {
+      padding: 0 2rem;
+      flex-direction: row;
+    }
+  }
+
+  .social-wrapper {
+    padding: 0 2rem;
+    color: var(--brand-red);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    grid-row: 2;
+    grid-column: 2;
+
+    h4 {
+      font-size: 2rem;
+      text-transform: uppercase;
+      justify-self: flex-end;
+      margin: 0;
+    }
+
+    p {
+      color: inherit;
+      grid-column: 1 / -1;
+      justify-self: flex-end;
+    }
+
+    @media screen and (min-width: 60rem) {
+      display: grid;
+      grid-template-columns: 1fr min-content;
+      gap: 0;
+      align-items: center;
+    }
+  }
+}
+
+.privacy-policy,
+.site-terms {
+
+  padding: 3rem;
+  max-width: 900px;
+  margin: 0 auto;
+  overflow-y: auto;
+  max-height: 90vh;
+  font-family: sans-serif;
+
+  h2, h3 {
+    font-family: inherit;
+    font-size: 1em;
+  }
+
+  h3 {
+    margin-top: 3rem;
+  }
+
+  ul {
+    padding-left: 4rem;
+    padding-top: 0.75rem;
+  }
+
+  li {
+    font-weight: lighter;
+    font-family: sans-serif;
+  }
+
+  p,
+  li {
+    font-size: 0.75em;
+  }
+}

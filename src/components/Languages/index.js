@@ -41,7 +41,7 @@ const Languages = () => {
 
   return (
     <>
-      <ul>
+      <ul className="list-languages">
         <li>
         <Link 
           to="/" 

@@ -1,0 +1,108 @@
+.sponsor-logos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 0 10vw;
+  gap: 1rem;
+
+  @media screen and (min-width: 60rem) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5vw;
+  }
+
+
+  img {
+    max-height: 20vw;
+    @media screen and (min-width: 60rem) {
+      max-height: 10vw;
+    }
+  }
+
+  .blackbird {
+    grid-row: 2;
+    grid-column: 2 / 4;
+    justify-self: flex-end;
+    display: flex;
+
+    p {
+      font-size: 1rem;
+      display: inline-block;
+    }
+  }
+
+  @media screen and (min-width: 60rem) {
+    display: inline-grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1vw 2vw;
+    
+    img {
+      max-height: 8vw;
+    }
+
+    .corning {
+      grid-column: 2 / -1;
+    }
+  }
+
+  @media screen and (min-width: 1600px) {
+    gap: 2rem;
+
+    img {
+      max-height: 120px;
+    }
+  }
+
+  &.alt {
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    margin: 0;
+
+    img {
+      max-height: 40px;
+
+      @media screen and (min-width: 40rem) {
+        max-height: 5vw;
+      }
+
+      @media screen and (min-width: 60rem) {
+        max-height: 4vw;
+      }
+    }
+  }
+
+  &.footer {
+    display: inline-grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0 3rem 20vw;
+
+    .produced-by {
+      grid-column: 1 / -1;
+      font-size: 2rem;
+      line-height: 0;
+      font-weight: bold;
+      text-align: left;
+      text-transform: uppercase;
+      color: inherit;
+    }
+
+    img {
+      max-height: 12vw;
+    }
+
+    @media screen and (min-width: 60rem) {
+      img {
+        max-height: 6vw;
+      }
+    }
+
+    @media screen and (min-width: 1600px) {
+      img {
+        max-height: 6rem;
+      }
+    }
+  }
+
+}

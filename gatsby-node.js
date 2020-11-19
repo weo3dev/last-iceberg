@@ -43,39 +43,50 @@ exports.onCreatePage = ({ page, actions }) => {
 // It's necessary to do that to filter by language
 // And the slug make sure the urls will be the same for all posts
 exports.onCreateNode = ({ node, actions }) => {
-  const { createNodeField } = actions;
+  // const { createNodeField } = actions;
 
-  // Check for "MarkdownRemark" type so that other files (e.g. images) are exluded
-  if (node.internal.type === `MarkdownRemark`) {
-    // Use path.basename
-    // https://nodejs.org/api/path.html#path_path_basename_path_ext
-    // It will return the file name without '.md' string (e.g. "file-name" or "file-name.lang")
-    const name = path.basename(node.fileAbsolutePath, `.md`);
+  // // Check for "MarkdownRemark" type so that other files (e.g. images) are exluded
+  // if (node.internal.type === `MarkdownRemark`) {
+  //   // Use path.basename
+  //   // https://nodejs.org/api/path.html#path_path_basename_path_ext
+  //   // It will return the file name without '.md' string (e.g. "file-name" or "file-name.lang")
+  //   const name = path.basename(node.fileAbsolutePath, `.md`);
 
-    // Find the key that has "default: true" set (in this case it returns "en")
-    const defaultKey = findKey(locales, o => o.default === true);
+  //   // Find the key that has "default: true" set (in this case it returns "en")
+  //   const defaultKey = findKey(locales, o => o.default === true);
 
-    // Check if file.name.lang has the default lang type.
-    // (in this case the default language is for files set with "en")
-    const isDefault = name.split(`.`)[1] === defaultKey;
+  //   // Check if file.name.lang has the default lang type.
+  //   // (in this case the default language is for files set with "en")
+  //   const isDefault = name.split(`.`)[1] === defaultKey;
 
-    // Files are defined with "name-with-dashes.lang.md"
-    // So grab the lang from that string
-    // If it's the default language, pass the locale for that
-    const lang = isDefault ? defaultKey : name.split(`.`)[1];
+  //   // Files are defined with "name-with-dashes.lang.md"
+  //   // So grab the lang from that string
+  //   // If it's the default language, pass the locale for that
+  //   const lang = isDefault ? defaultKey : name.split(`.`)[1];
 
-    // Get the entire file name and remove the lang of it
-    const slugFileName = name.split(`.`)[0];
-    // Than remove the date if the name has the date info
-    const slug =
-      slugFileName.length >= 10
-        ? slugFileName.slice(11)
-        : slugFileName;
+  //   // Get the entire file name and remove the lang of it
+  //   const slugFileName = name.split(`.`)[0];
+  //   // Than remove the date if the name has the date info
+  //   const slug =
+  //     slugFileName.length >= 10
+  //       ? slugFileName.slice(11)
+  //       : slugFileName;
 
-    // Adding the nodes on GraphQL for each post as "fields"
-    createNodeField({ node, name: `slug`, value: slug });
-    createNodeField({ node, name: `locale`, value: lang });
-    createNodeField({ node, name: `isDefault`, value: isDefault });
-  }
+  //   // Adding the nodes on GraphQL for each post as "fields"
+  //   createNodeField({ node, name: `slug`, value: slug });
+  //   createNodeField({ node, name: `locale`, value: lang });
+  //   createNodeField({ node, name: `isDefault`, value: isDefault });
+  // }
 };
+
+exports.onCreateWebpackConfig = ({ actions }) => {
+  actions.setWebpackConfig({
+    resolve: {
+      alias: {
+        "~components": path.resolve(__dirname, 'src/components'),
+        "~parts": path.resolve(__dirname, 'src/parts'),
+      },
+    },
+  })
+}
 

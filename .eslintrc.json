@@ -5,8 +5,8 @@
   "globals": {
     "graphql": false
   },
-  "rules": {
-    "react/prop-types": [0]
-  },
+  "extends": "react-app",
+  "plugins": ["jsx-a11y"],
   "parser": "babel-eslint"
 }
+

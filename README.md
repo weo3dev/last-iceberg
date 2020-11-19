@@ -1,21 +1,17 @@
-[![Gitpod Ready-to-Code](https://img.shields.io/badge/Gitpod-Ready--to--Code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/diogorodrigues/iceberg-gatsby-multilang) 
+<img src="./src/images/ptm-logo-deep.png" width="150">
 
-# Gatsby multi-language starter with CMS
+## Peace Through Music 2020 campaign site
+### Based on customised render of Iceberg Gatsby theme
 
-[Demo on Netlify](https://iceberg-gatsby-multilang.netlify.com/)
-
-[Starter on Gatsby](https://www.gatsbyjs.org/starters/diogorodrigues/iceberg-gatsby-multilang/)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/d42b0f72-3937-4b15-b7e2-27178195b1e4/deploy-status)](https://app.netlify.com/sites/pfc2020-v4/deploys)
 
 A starter Internationalization / i18n without third party plugins or packages for Posts and Pages. Different URLs dependending on the language. Focused on SEO, PWA, Image Optimization, Styled Components and more. This starter is also integrate with Netlify CMS to manage all pages, posts and images.
 
 -   Translations by using GraphQL, hooks and context API
--   Content in markdown for pages and posts in different languages
 -   General translations for any content
--   Creation of menus by using, jSON, translations and GraphQL
+-   Creation of menus using json, translations and GraphQL
 -   Netlify CMS to manage all pages, posts and images
--   Styled Components to styles
--   All important seetings for speedy and optimized images
--   Blog Posts list with pagination
+-   Settings for speedy and optimized images
 -   Focus on SEO
 -   PWA
 
@@ -23,24 +19,19 @@ A starter Internationalization / i18n without third party plugins or packages fo
 
 Assuming [Gatsby](https://github.com/gatsbyjs/gatsby/) is installed, run the following commands to install the project:
 
-**With gatsby-cli**:
-```
-$ gatsby new gatsby-multilanguage-site https://github.com/diogorodrigues/iceberg-gatsby-multilang.git
-```
-
 **With git clone**:
 ```
-$ git clone https://github.com/diogorodrigues/iceberg-gatsby-multilang.git your-project-name # Clone the project
+$ git clone https://github.com/boneal2020/pfc2020-v4.git your-project-name # Clone the project
 
-cd your-project-name
+cd pfc2020-v4
 
-rm -rf .git
 yarn install # or npm install
 gatsby develop # or yarn run develop
 ```
 
+Note: Yarn is preferred method.
 
-Running `gatsby develop` you will see the following URLs:
+Using the preferred command `yarn run develop` (or you can use the standard `gatsby develop`), you will see the following URLs:
 
 ```
 http://localhost:8000
@@ -50,12 +41,9 @@ http://localhost:8000/admin
 
 ## File Structure
 
-A quick look at the top-level files and directories you'll see in a Gatsby project.
+Top-level files and directories
 
 ```
-├── blog
-│   ├── markdown-file.en.md
-│   ├── markdown-file.pt.md
 ├── config
 │   ├── language-mapping
 │   ├── menu
@@ -65,9 +53,6 @@ A quick look at the top-level files and directories you'll see in a Gatsby proje
 │   │   ├── en.json
 │   │   ├── pt.json
 │   ├── i18n.js
-├── pages
-│   ├── markdown-file.en.md
-│   ├── markdown-file.pt.md
 ├── src
 ├── static
 │   ├── admin
@@ -82,33 +67,30 @@ A quick look at the top-level files and directories you'll see in a Gatsby proje
 
 ```
 
-1. **blog and pages directories**:
-   All markdown files to generate pages and posts.
 
-2. **config**:
+1. **config**:
    All language settings: languages, strings, menu...
    In `i18n.js` you can set the languages and some others important info
 
-3. **src**:
+2. **src**:
    Components, hooks, templates and fixed pages (Different of markdown pages, these pages have the same url for all languages and the text content needs to be inserted in `config/translations` files).
 
-4. **static**:
+3. **static**:
    Netlify settings and images.
 
-5. **gatsby-browser.js**:
+4. **gatsby-browser.js**:
    External files and the layout wrapper setting.
 
-6. **gatsby-config.js**:
+5. **gatsby-config.js**:
    Gatsby plugins.
 
-7. **gatsby-node.js**:
+6. **gatsby-node.js**:
    Logic for generating pages and posts by manipulating GraphQL.
 
-8. **wrapPageElement.js**
+7. **wrapPageElement.js**
    As this component wraps every page (due to the wrapPageElement API) we can be sure to have the locale available everywhere!
 
 ## About Netlify CMS
-
 You must change the Netlify data "repo" and "site_domain" according your Github repository in `static/admin/config.yml`.
 
 ```
@@ -129,17 +111,5 @@ Realize that you need to use `name: github` for local development and `name: git
 -   The menu items translations are located in `config/menu` and the `useMenu` custom hook pulls these translations (via GraphQL query) and inserts them into the pages.
 -   **✨ New**: Adding corresponding urls are locating in `config/language-mapping` and the `useLanguageMapping` custom hook pulls these translations (via GraphQL query) and inserts them into the pages. It is used together with the language switcher so that the page is directed to a page corresponding to the other language.
 -   Due to the use of a global layout / context API and the language code passed to all pages (see `gatsby-node.js`), you know on all pages which language is currently displayed.
--   Blogposts are defined in `blog` directory and pages are defined in `pages` directory. The file names are the `slug` of the posts and pages.
 -   A custom component for the <a> tag is implemented - this way links can stay the same for every language, without the need to manually write path prefixes.
 
-## Deploy
-
-<a href="https://app.netlify.com/start/deploy?repository=https://github.com/diogorodrigues/iceberg-gatsby-multilang" rel="nofollow"><img src="https://camo.githubusercontent.com/be2eb66bb727e25655f1dcff88c2fdca82a77513/68747470733a2f2f7777772e6e65746c6966792e636f6d2f696d672f6465706c6f792f627574746f6e2e737667" alt="Deploy to Netlify" data-canonical-src="https://www.netlify.com/img/deploy/button.svg" style="max-width:100%;"></a>
-
----
-
-💜 _Thanks_
-
----
-
-This project started based on [this solution](https://github.com/gatsbyjs/gatsby/tree/master/examples/using-i18n) to create a manner to provide translations, but I added a lots of other solutions based on my projects needs (like menu from GraphQL, markdown for pages, pagination, image optmization, styled components, PWA, CMS and more). Feel free to use this solution if you want. :)
